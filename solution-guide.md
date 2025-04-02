@@ -35,21 +35,26 @@
 ---
 
 ### 2. 동역학 모델링 (Lagrangian 기반)
-- **목표**: 각 관절에 필요한 토크 계산
+
+- **목표**: 각 관절에 필요한 토크 계산  
 - **수식**:
-  - 운동에너지 T, 위치에너지 V
-  - L = T - V
-  - \( \tau_i = \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_i}\right) - \frac{\partial L}{\partial q_i} \)
+  - 운동에너지 T, 위치에너지 V  
+    ![L = T - V](https://latex.codecogs.com/svg.image?L%20%3D%20T%20-%20V)
+  - 라그랑주 방정식  
+    ![tau](https://latex.codecogs.com/svg.image?\tau%20%3D%20\frac{d}{dt}\left(\frac{\partial%20L}{\partial%20\dot{q}}\right)%20-%20\frac{\partial%20L}{\partial%20q})
 - **도구**: Python (`SymPy`), 질량/관성/링크 길이 정보
 
 ---
 
 ### 3. 실시간 상태 추정
-- **목표**: q, q_dot, q_ddot 계산
-- **도구**: 센서 (A5600), Python (수치 미분)
-- **수식**:
-  - \( \dot{q}_i = \frac{q_i(t) - q_i(t - \Delta t)}{\Delta t} \)
-  - \( \ddot{q}_i = \frac{\dot{q}_i(t) - \dot{q}_i(t - \Delta t)}{\Delta t} \)
+
+- **목표**: q, 𝑞̇, 𝑞̈ 계산  
+- **도구**: 센서 (A5600), Python (수치 미분)  
+- **수식**:  
+  - 속도  
+    ![q_dot](https://latex.codecogs.com/svg.image?\dot{q}_i%20%3D%20\frac{q_i(t)%20-%20q_i(t-\Delta%20t)}{\Delta%20t})
+  - 가속도  
+    ![q_ddot](https://latex.codecogs.com/svg.image?\ddot{q}_i%20%3D%20\frac{\dot{q}_i(t)%20-%20\dot{q}_i(t-\Delta%20t)}{\Delta%20t})
 
 ---
 
