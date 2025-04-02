@@ -86,7 +86,7 @@
 ---
 
 ## 🗂 참고 문서 링크
-- [연구 계획서](README.md)
+- [연구 계획서](research-docs.md)
 - [계산 설명서](calculate.md)
 - [시뮬레이션 예시](simulation.md)
 
