@@ -19,9 +19,9 @@ print(f"동작 시간: {end - start:.2f}초")
 
 ## ✅ 2단계: 위치 계산 (정기구학)
 
+[연구 절차 통합 정리 문서](solution-guide.md)에서 1. 기구학 모델링 (정기구학)에 해당하는 부분 입니다.
+
 ```python
-복사
-편집
 import numpy as np
 def rot_z(t):
     return np.array([[np.cos(t), -np.sin(t), 0, 0],
@@ -43,6 +43,8 @@ print("말단 위치:", T[:3, 3])
 
 ## ✅ 3단계: 라그랑주 기반 토크 계산
 
+[연구 절차 통합 정리 문서](solution-guide.md)에서 2. 동역학 모델링(Lagrangian 기반)에 해당하는 부분 입니다.
+
 ```python
 import sympy as sp
 theta, dtheta, ddtheta = sp.symbols('theta dtheta ddtheta')
@@ -59,6 +61,8 @@ print("토크 (Nm):", val)
 
 ## ✅ 4단계: 속도 및 가속도 추정
 
+[연구 절차 통합 정리 문서](solution-guide.md)에서 3. 실시간 상태 추정에 해당하는 부분 입니다.
+
 ```python
 import numpy as np
 angles = np.radians([30, 32, 35])
@@ -72,6 +76,8 @@ print(f"속도: {v2:.3f} rad/s, 가속도: {a:.3f} rad/s²")
 예상: 속도 ≈ 0.262 rad/s, 가속도 ≈ 6.54 rad/s²
 
 ## ✅ 5단계: 제어기 출력 예측
+
+[연구 절차 통합 정리 문서](solution-guide.md)에서 4. 제어기 설계 및 시뮬레이션에 해당하는 부분 입니다.
 
 ```python
 import numpy as np
@@ -87,7 +93,7 @@ print(f"제어 입력 u = {u:.3f} Nm")
 
 예상 제어 입력: u ≈ 0.52 Nm
 
-## ✅ 6단계: 오차 기반 분석
+## ✅ 6단계: 오차 기반 분석(추가 연구)
 
 ```python
 from sklearn.metrics import mean_squared_error
