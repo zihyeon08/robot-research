@@ -3,7 +3,7 @@
 
 다음과 같은 문서를 제공 중 입니다. 순서대로 봐주시면 됩니다.
 
-- [pre-investigation.md](pre-investigaion.md) : 사전 배경 지식과 계산 과정에서 필요한 입력 파라미터들 정리
+- [pre-investigation.md](pre-investigation.md) : 사전 배경 지식과 계산 과정에서 필요한 입력 파라미터들 정리
 - [solution-guide.md](solution-guide.md) : 연구 절차 통합 정리 문서
 - [research-docs.md](research-docs.md) : 연구 계획서
 - [calculate.md](calculate.md) : 연구에서 필요한 계산 과정 설명서
