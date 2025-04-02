@@ -105,5 +105,10 @@ print(f"RMSE: {rmse:.3f} deg")
 
 예상 RMSE: 약 1.12°
 
-📁 [문서 이동](./research-docs.md)
-📐 [계산 설명서로](./calculate.md)
+## 🔁 문서 이동
+
+- 📄 [사전 배경 지식 & 계산 입력 파라미터 정리](pre-investigation.md)
+- 🧪 [연구 계획서](research-docs.md)
+- 📄 [연구 절차 통합 정리 문서](solution-guide.md)
+- 🧪 [계산 과정 설명서](calculate.md)
+- 📄 [연구 예상 시뮬레이션](simulation.md)
