@@ -60,7 +60,7 @@
 
 ### 4. 제어기 설계 및 시뮬레이션
 - **목표**: PID + 토크 기반 제어기 설계
-- **제어식**: \( u = \tau + K_p e + K_d \dot{e} \)
+- **제어식**: ![control_eq](https://latex.codecogs.com/svg.image?u%20%3D%20\tau%20%2B%20K_p%20e%20%2B%20K_d%20\dot{e})  
 - **도구**: Python, Arduino, 실시간 테스트 코드
 - **목표**: 목표 위치를 안정적으로 추종
 
